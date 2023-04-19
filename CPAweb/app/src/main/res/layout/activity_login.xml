@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-48dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75sp"
+            android:layout_marginBottom="30sp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginRight="8sp"
+                android:src="@mipmap/logocpa"
+                android:layout_marginLeft="-20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5sp"
+                android:text="C"
+                android:textColor="@color/primary"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2sp"
+                android:text="P"
+                android:textColor="@color/primary"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textColor="@color/primary"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp">
+
+            <LinearLayout
+                android:layout_width="75sp"
+                android:layout_height="55sp"
+                android:background="@drawable/rounded_left_border"
+                android:backgroundTint="@color/primary"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="17dp"
+                    android:src="@mipmap/email" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:background="#F9F9F9"
+                android:hint="Email"
+                android:paddingLeft="10sp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp">
+
+            <LinearLayout
+                android:layout_width="75sp"
+                android:layout_height="55sp"
+                android:background="@drawable/rounded_left_border"
+                android:backgroundTint="@color/primary"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="17dp"
+                    android:src="@mipmap/lock" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:background="#F9F9F9"
+                android:hint="Senha"
+                android:paddingLeft="10sp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            style="@style/OrangeButton"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_rectangle"
+            android:text="Entrar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não possui conta? Cadastre-se" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
